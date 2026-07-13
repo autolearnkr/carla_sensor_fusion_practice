@@ -41,7 +41,7 @@ def main():
 
         # 1. Traffic Manager(TM) 인스턴스 획득
         traffic_manager = client.get_trafficmanager(8000)
-        traffic_manager.set_minimum_distance_to_vehicle(vehicle, 3.0)
+        traffic_manager.set_distance_to_leading_vehicle(vehicle, 3.0)
         
         # 2. 에고 차량 오토파일럿 활성화
         print("Enabling autopilot on the vehicle...")
